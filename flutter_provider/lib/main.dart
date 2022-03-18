@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'myapp/About.dart';
+import 'myapp/FutureProviderFlutter.dart';
 import 'myapp/Home.dart';
 import 'myapp/MyProviderClass.dart';
+import 'myapp/StreamProviderFlutter.dart';
 
 void main() {
   runApp(
@@ -26,7 +28,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FocusProvider(), //Home(), // home of root changes
+      home: const StreamProviderFlutter(), // Stream provider
+      //FutureProviderFlutter(),// future provider //FocusProvider(),// for focus provider //Home(), // home of root changes
     );
   }
 }

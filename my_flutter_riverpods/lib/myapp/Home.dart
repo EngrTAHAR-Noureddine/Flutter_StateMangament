@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'customWidget.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -8,25 +11,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int n = 0;
+
+
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Riverpod"),
-      ),
-      body:
-      Center(
-        child: Text("$n" , style: const TextStyle(color: Colors.black , fontSize: 24, ),),
-      ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){},
-        child: const Icon(Icons.add,color: Colors.white),
-      ),
-    );
+    return const ProviderScope( child: CustomWidget() );
   }
 }
