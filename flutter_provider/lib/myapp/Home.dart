@@ -25,6 +25,7 @@ class _HomeState extends State<Home> {
             Center(
               child: Text("${myprovider.number}" , style: const TextStyle(color: Colors.black , fontSize: 24, ),),
             ),
+
             floatingActionButton: FloatingActionButton(
               onPressed: () => myprovider.addNumber(),
               // context.read<MyProvider>().addNumber(),
