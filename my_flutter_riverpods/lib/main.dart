@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_riverpods/myapp/Home.dart';
 
+import 'myapp/futureproviders/AboutFuture.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const  Home(),
+      home: const Home(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_flutter_riverpods/myapp/futureproviders/AboutFuture.dart';
 
 import 'customWidget.dart';
 
@@ -16,6 +17,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return const ProviderScope( child: CustomWidget() );
+    return const ProviderScope(
+        child: AboutFutureProvider()  //CustomWidget()
+    );
   }
 }
