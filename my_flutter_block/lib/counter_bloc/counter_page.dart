@@ -8,6 +8,7 @@ class CounterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Counter')),
+
       body: BlocBuilder<CounterBloc, int>(
         builder: (context, count) {
           return Center(
@@ -18,6 +19,7 @@ class CounterPage extends StatelessWidget {
           );
         },
       ),
+
       floatingActionButton: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -25,7 +27,7 @@ class CounterPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: FloatingActionButton(
-              child: Icon(Icons.add),
+              child: const Icon(Icons.add),
               onPressed: () => context.read<CounterBloc>().add(CounterIncrementPressed()),
             ),
           ),
