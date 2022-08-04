@@ -30,15 +30,7 @@ class TimerRunInProgress extends TimerState {
 }
 
 class TimerRunComplete extends TimerState {
-  const TimerRunComplete() : super(0);
-}
-part of 'timer_bloc.dart';
-
-abstract class TimerState extends Equatable {
-  const TimerState();
+  const   TimerRunComplete() : super(0);
 }
 
-class TimerInitial extends TimerState {
-  @override
-  List<Object> get props => [];
-}
+
